@@ -40,7 +40,7 @@ function handler(done) {
     dbQuery((error, dbResults) => {
       if (error) return done(error);
       serviceCall(dbResults, (error, serviceResults) => {
-        console.log(result);
+        console.log(dbResults);
         done(error, serviceResults);
       });
     });
